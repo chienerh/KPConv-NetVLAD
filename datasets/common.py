@@ -188,11 +188,10 @@ def batch_neighbors(queries, supports, q_batches, s_batches, radius):
     :param queries: (N1, 3) the query points
     :param supports: (N2, 3) the support points
     :param q_batches: (B) the list of lengths of batch elements in queries
-    :param s_batches: (B)the list of lengths of batch elements in supports
+    :param s_batches: (B) the list of lengths of batch elements in supports
     :param radius: float32
     :return: neighbors indices
     """
-
     return cpp_neighbors.batch_query(queries, supports, q_batches, s_batches, radius=radius)
 
 

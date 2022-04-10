@@ -610,7 +610,7 @@ class ResnetBottleneckBlock(nn.Module):
         if in_dim != out_dim:
             self.unary_shortcut = UnaryBlock(in_dim, out_dim, self.use_bn, self.bn_momentum, no_relu=True)
         else:
-            self.unary_shortcut = nn.Identity()
+            self.unary_shortcut = nn.Sequential() #nn.Identity()
 
         # Other operations
         self.leaky_relu = nn.LeakyReLU(0.1)

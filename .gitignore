@@ -6,6 +6,9 @@
 /docker_scripts
 /kernels/dispositions
 core
+wandb/
+pretrained_models/
+log/
 
 # VSCode related
 *.code-workspace
