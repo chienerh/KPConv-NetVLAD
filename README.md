@@ -1,6 +1,6 @@
 # KPConv-NetVLAD
 ## Introduction
-This is a repository forked from [Hugues THOMAS](https://github.com/HuguesTHOMAS/KPConv-PyTorch). 
+This is a repository forked from [Hugues THOMAS/KPConv-PyTorch](https://github.com/HuguesTHOMAS/KPConv-PyTorch). 
 In this repository, KPConv is used as an encoder to learn the local features of the point clouds. NetVLAD is intergrated to learn the global descriptor for performing place recognition. 
 
 ## Installation
@@ -20,6 +20,6 @@ Evaluation:
 python evaluation_place_recognition.py
 ```
 
-Result:
-![Precision Recall Curve](./doc/precision_recall_curve.png)
+Results: \
+![Precision Recall Curve](./doc/precision_recall_curve.png) \
 ![Average Recall Curve](./doc/average_recall_curve.png)
