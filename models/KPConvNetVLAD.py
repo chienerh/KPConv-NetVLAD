@@ -230,9 +230,6 @@ def preprocess_input(dataset_input, config):
                 r = r_normal
 
             conv_i = batch_neighbors(stacked_points, stacked_points, stack_lengths, stack_lengths, r)
-            if np.max(conv_i) > stacked_points.shape[0]:
-                convi[np.unravel_index(convi.argmax(), convi.shape)] -= 1
-                print('changed neighbor')
 
         else:
             # This layer only perform pooling, no neighbors required
